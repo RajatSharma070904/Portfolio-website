@@ -1,0 +1,222 @@
+* {   
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    
+    background: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18  ,62);
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover{
+    font-size: 1.6rem;
+    color: lavender;
+  }
+  .left{
+    font-size: 2rem;
+  }
+  .firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .leftSection{
+    font-size: 2rem;
+    /*margin: 70px 0;*/
+  }
+  .rightSection img{
+    width: 50%;
+    height: 60%;
+    margin-left: 35%;
+    margin-top: 50px;
+  }
+  .purple{
+    color: rgb(143, 71, 211);
+  }
+  #element{
+    color: rgb(143, 71, 211);
+  }
+  .secondSection{
+    max-width: 80vw;
+    margin: auto;
+  }
+  main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 80px;
+  }
+  .secondSection h1{
+    font-size: 1.9rem;
+  }
+  .text-gray{
+    color: gray;
+  }
+  .secondSection .box{ 
+    background: white;
+    width: 70vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  }
+  .secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 140px;
+  }
+  .vertical-title{
+    position: relative;
+    top: 95px;
+    width: 150px;
+  }
+  .vertical-desc{
+    position: relative;
+    top: 100px;
+    color: gray;
+    width: 150px;
+    font-size: 11px;
+}
+
+.footer{
+  display: flex;
+  padding: 0px 100px;
+  justify-content:space-evenly ;
+}
+.footer ul{
+  list-style: none;
+}
+footer .footer-rights{
+text-align: center;
+color: grey;
+padding: 12px 0px;
+}
+
+.main-div{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 350px;
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+footer{
+  background-color: #0e0e1a;
+  height: 150px;
+  bottom: 0;
+  position: relative;
+  width: 100%;  
+  color: white;
+  padding-top: 10px;
+}
+.footer{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pop-up{
+  position: absolute;
+  visibility: hidden;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 60%;
+  height: 500px;
+  background-color: #5972b7;
+  /* background-image: url("https://www.bing.com/th/id/OGC.53968217fbd7d299a3742b348b01c7f9?pid=1.7&rurl=https%3a%2f%2fi.gifer.com%2forigin%2fce%2fce5eb2644e9cdd710829524f9efc1833_w200.gif&ehk=myhZ89fJo2H2JNlzFRMvVOP3xudpgvf2S%2b3to2uACT8%3d");
+  background-repeat: no-repeat; */
+}
+
+.material-symbols-outlined{
+  color: black;
+  background-color: red;
+  cursor: pointer;
+}
+#hamburger{
+  display: none;
+  color: white;
+
+}
+.close-img{
+  width: 50px;
+  height: 50px;
+}
+a{
+  cursor: pointer;
+  color: white;
+  text-decoration-line: none;
+}
+.mainblock{
+  color: black;
+}
+.aboutname{
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: rgb(18, 18  ,62); /* Pink background color */
+  color: white;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(1.14); /* Zoom effect */
+}
+
+.card-body {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover .card-body {
+  transform: translateY(-10px); /* Optional: Slight lift of the content */
+}
+.footer-link{
+  display: flex;
+  gap: 10px;
+}
+.linkdin-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width:700px) {
+  .pop-up{
+    width: 100%;
+    height: 100vh;
+  }
+  .navbar-laptop{
+    display: none;
+  }
+  #hamburger{
+    display: block;
+  }
+}
